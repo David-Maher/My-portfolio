@@ -1,0 +1,50 @@
+@plugin "daisyui";
+@import "tailwindcss";
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Fugaz One', cursive; /* هنا تخلي كل المشروع يستخدم Fugaz One */
+
+}
+:root {
+  /* Background & Text Colors */
+  --bg-main: #F4F4F4;       /* Light Gray */
+  --text-primary: #2E2E2E;  /* Charcoal */
+  --text-secondary: #FFFFFF; /* White */
+  --accent: #4A90E2;        /* Muted Blue */
+}
+
+.App {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+font-family: 'Poppins', sans-serif;
+}
+
+button {
+  background-color: var(--accent);
+  color: var(--text-secondary);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #357ABD; /* أفتح شوية على الـ accent */
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
